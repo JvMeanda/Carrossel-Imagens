@@ -1,0 +1,172 @@
+/* HEADER */
+body {-webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 100%;
+  height: 100vh;
+  width: 100vw;
+  background-attachment: fixed;
+  background-image: linear-gradient(
+    to bottom,
+    #f5dccb,
+    #f5dccb,
+    #f5dccb,
+    #dec8ad
+  );
+  overflow-x: hidden;
+  cursor: default;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-image: url(./02-23.png);
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: 230px;
+}
+
+header {
+  background-color: #f4eff1;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+li {
+  padding: 25px;
+  display: flex;
+  float: left;
+  list-style-type: none;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: #ff3b77;
+}
+
+/* TÍTULO */
+
+.titulo {
+  left: 35%;
+  right: 35%;
+  position: absolute;
+  bottom: 80%;
+}
+
+.titulo {
+  border: solid 4px #DEA597;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: justify;
+  background-color: #f4eff1;
+  text-align: center;
+  cursor: text;
+}
+
+h1 {
+  font-family: "Dancing Script", cursive;
+}
+
+/* CARROSSEL */
+
+.conteudo {
+  overflow: hidden;
+  border-radius: 20px;
+  width: 640px;
+  height: 360px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -65%);
+  border: #DEA597 solid 10px;
+}
+
+.navigation {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+}
+
+.bar {
+  width: 70px;
+  height: 17px;
+  border: 2px solid white;
+  margin: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.bar:hover {
+  background: white;
+}
+
+input {
+  display: none;
+}
+
+.imagens {
+  display: flex;
+  width: 300%;
+  height: 100%;
+}
+
+.imagem {
+  width: 33.3%;
+  transition: 0.3s;
+}
+
+.imagem img {
+  width: 100%;
+  height: 100%;
+}
+
+#slide1:checked ~ .slid1 {
+    margin-left: 0;
+}
+
+#slide2:checked ~ .slid1 {
+    margin-left: -33.3%;
+}
+
+#slide3:checked ~ .slid1 {
+    margin-left:-66.6%; 
+}
+
+/* FOOTER */
+ .lgfooter{
+   width: 80px;
+   bottom: 1%;
+   position: absolute;
+   margin: 10px;
+   left: 20%;
+  }
+
+  .LC{
+    bottom: 30px;
+    position: absolute;
+    margin: 10px;
+    left: 25%;
+  }
+
+  .OBGD{
+    bottom: 30px;
+    position: absolute;
+    margin: 10px;
+    left: 40%;
+    text-decoration: overline underline;
+    color: #ff3b77;
+  }
+ 
+.no-working-footer{
+  border: 2px solid #ff3b77;
+}
